@@ -88,6 +88,7 @@ app.delete('/dogs/:id', (req, res) => {
       res.status(404).json({ message : 'Not found'})
     } else {
       dogs = dogs.filter(dog => dog.id !== id)
+      res.status(200).json({ message: `Dog with id ${id} got deleted!`})
     }
     // if there is a crash here
     // instead of the app blowing up
