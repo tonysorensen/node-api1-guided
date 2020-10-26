@@ -22,6 +22,8 @@ app.get('/dogs', (req, res) => {
   res.status(200).json(dogs)
 })
 
+app.get('/dogs/:id', )
+
 //  [GET] catch all endpoint (404 resource not found)
 app.get('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
