@@ -16,13 +16,13 @@ let dogs = [
   { id: generate(), name: 'Bicho', breed: 'Maltese' },
 ]
 
-// 5- ENDPOINT 
+// 5- ENDPOINTS
 //  [GET] all dogs in the db
-//  catch all endpoint (404 resource not found)
 app.get('/dogs', (req, res) => {
   res.status(200).json(dogs)
 })
 
+//  [GET] catch all endpoint (404 resource not found)
 app.get('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
 })
