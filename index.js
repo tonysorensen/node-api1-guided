@@ -51,7 +51,7 @@ app.post('/dogs', (req, res) => {
     // 3- make a new resource, complete with unique id
     const newDog = { id: generate(), name, breed }
     // 4- add the new dog to our fake db
-    dog.push(newDog)
+    dogs.push(newDog)
     // 5- send back the newly created resource
     res.status(201).json(newDog)
   }
