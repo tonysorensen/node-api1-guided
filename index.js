@@ -99,7 +99,7 @@ app.delete('/dogs/:id', (req, res) => {
 })
 
 // [GET, POST...] catch all endpoint (404 resource not found)
-app.use('*', (req, res) => {
+app.all('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
 })
 
