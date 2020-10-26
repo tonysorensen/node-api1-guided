@@ -1,1 +1,1 @@
-console.log('hello there, awesome Web 35!')
+console.log('AWESOME Web 35!')
