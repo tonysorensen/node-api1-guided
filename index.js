@@ -29,7 +29,9 @@ app.get('/dogs/:id', (req, res) => {
   const dog = dogs.find(dog => dog.id === id)
   // 3- set status code and send back the dog
   if (!dog) {
-    // set 404 and send somthing decent
+    res.status(404).json({
+      message: `No dog with id ${id}`,
+    })
   } else {
     res.status(200).json(dog)
   }
