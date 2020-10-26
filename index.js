@@ -57,6 +57,8 @@ app.post('/dogs', (req, res) => {
   }
 })
 
+// [PUT] replace dog with given id (params) with the { name, breed }
+
 // [GET, POST...] catch all endpoint (404 resource not found)
 app.use('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
