@@ -38,7 +38,9 @@ app.get('/dogs/:id', (req, res) => {
   }
 })
 
-//  [GET] catch all endpoint (404 resource not found)
+// [POST] dog using the request body as raw material
+
+// [GET] catch all endpoint (404 resource not found)
 app.get('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
 })
