@@ -82,8 +82,9 @@ app.delete('/dogs/:id', (req, res) => {
   // 1- find dog by the given id
   // 2- remove it from the dogs array
   // 3- send back something
+  const { id } = req.params
   try {
-    dogs = dogs.filter()
+    dogs = dogs.filter(dog => dog.id !== id)
     // if there is a crash here
     // instead of the app blowing up
     // the block inside the catch will run
