@@ -18,4 +18,5 @@ let dogs = [
 
 // 5- ENDPOINT 
 //  [GET] all dogs in the db
-//  catch all endpoint
+//  catch all endpoint (404 resource not found)
+app.get('*', () )
