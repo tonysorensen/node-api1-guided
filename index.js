@@ -23,7 +23,7 @@ app.get('/dogs', (req, res) => {
 })
 
 app.get('/dogs/:id', (req, res) => {
-  // 1- pull out the id from the request
+  // 1- pull out the id from the request (the URL param)
 })
 
 //  [GET] catch all endpoint (404 resource not found)
