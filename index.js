@@ -24,6 +24,7 @@ app.get('/dogs', (req, res) => {
 
 app.get('/dogs/:id', (req, res) => {
   // 1- pull out the id from the request (the URL param)
+  const { id } = req.params
 })
 
 //  [GET] catch all endpoint (404 resource not found)
