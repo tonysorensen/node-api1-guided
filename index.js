@@ -26,7 +26,7 @@ app.get('/dogs/:id', (req, res) => {
   // 1- pull out the id from the request (the URL param)
   const { id } = req.params
   // 2- find the dog in the dogs arr with the given id
-  const dog = null
+  const dog = dogs.find(dog => )
   // 3- set status code and send back the dog
 })
 
