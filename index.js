@@ -57,8 +57,8 @@ app.post('/dogs', (req, res) => {
   }
 })
 
-// [GET] catch all endpoint (404 resource not found)
-app.get('*', (req, res) => {
+// [GET, POST...] catch all endpoint (404 resource not found)
+app.use('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
 })
 
