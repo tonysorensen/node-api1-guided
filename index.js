@@ -83,11 +83,12 @@ app.delete('/dogs/:id', (req, res) => {
   // 2- remove it from the dogs array
   // 3- send back something
   try {
+    dogs = dogs.filter()
     // if there is a crash here
     // instead of the app blowing up
     // the block inside the catch will run
   } catch (error) {
-    res.status(500).
+    res.status(500).json({ message: 'Somethign went really bad' })
   }
 })
 
