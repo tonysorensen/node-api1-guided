@@ -28,7 +28,9 @@ app.get('/dogs/:id', (req, res) => {
   // 2- find the dog in the dogs arr with the given id
   const dog = dogs.find(dog => dog.id === id)
   // 3- set status code and send back the dog
-  res.status(200).json(dog)
+  if (!dog) {
+    
+  }
 })
 
 //  [GET] catch all endpoint (404 resource not found)
