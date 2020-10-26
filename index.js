@@ -77,6 +77,11 @@ app.put('/dogs/:id', (req, res) => {
   }
 })
 
+// [DELETE] remove dog with given id in the params
+app.delete('/dogs/:id', (req, res) => {
+  //1- 
+})
+
 // [GET, POST...] catch all endpoint (404 resource not found)
 app.use('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
