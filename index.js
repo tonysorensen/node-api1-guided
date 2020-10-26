@@ -53,7 +53,7 @@ app.post('/dogs', (req, res) => {
     // 4- add the new dog to our fake db
     dogs.push(newDog)
     // 5- send back the newly created resource
-    res.status(201).json(newDog)
+    res.status(201).json(newDog) // up to you what to send
   }
 })
 
