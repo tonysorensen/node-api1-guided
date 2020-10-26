@@ -39,6 +39,9 @@ app.get('/dogs/:id', (req, res) => {
 })
 
 // [POST] dog using the request body as raw material
+app.post('/dogs', (req, res) => {
+  
+})
 
 // [GET] catch all endpoint (404 resource not found)
 app.get('*', (req, res) => {
