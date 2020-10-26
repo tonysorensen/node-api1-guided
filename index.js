@@ -49,7 +49,10 @@ app.post('/dogs', (req, res) => {
     })
   } else {
     // 3- make a new resource, complete with unique id
-    const newDog = { id: shortid(),  }
+    const newDog = {
+      id: shortid(),      name,
+      breed,
+    }
   }
   // 4- add the new dog to our fake db
   // 5- send back the newly created resource
