@@ -68,9 +68,13 @@ app.put('/dogs/:id', (req, res) => {
   // 4- find the dog and swap "breed" and "name"
   if (indexOfDog !== -1) {
     dogs[indexOfDog] = { id, name, breed }
+    // 5- send back the updated dog
+    res.status(200).json({ id, name, breed })
+  } else {
+    res.status(404).json({
+      message: `No dog with id ${id}`,
+    })
   }
-  // 5- send back the updated dog
-  res.status(200).json({ id, name, breed })
 })
 
 // [GET, POST...] catch all endpoint (404 resource not found)
