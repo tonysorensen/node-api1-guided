@@ -8,3 +8,5 @@ const generate = require('shortid').generate
 // 2- INSTANTIATE AND CONFIGURE THE SERVER
 const app = express() // here is our app (our server)
 app.use(express.json()) // plugging in a piece of middleware
+
+// 3- DECIDE A PORT NUMBER
