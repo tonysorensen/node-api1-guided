@@ -16,3 +16,4 @@ const dogs = [
   { id: generate(), name: 'Bicho', breed: 'Maltese' },
 ]
 
+console.log(dogs)
