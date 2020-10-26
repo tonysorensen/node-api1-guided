@@ -16,4 +16,6 @@ let dogs = [
   { id: generate(), name: 'Bicho', breed: 'Maltese' },
 ]
 
-// 
+// 5- ENDPOINT 
+//  [GET] all dogs in the db
+//  catch all endpoint
