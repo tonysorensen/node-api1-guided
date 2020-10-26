@@ -10,3 +10,9 @@ const app = express() // here is our app (our server)
 app.use(express.json()) // plugging in a piece of middleware
 
 // 3- DECIDE A PORT NUMBER
+const PORT = 5000
+
+// 4- FAKE DATA
+const dogs = [
+  { id:  },
+]
