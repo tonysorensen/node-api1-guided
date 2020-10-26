@@ -22,7 +22,9 @@ app.get('/dogs', (req, res) => {
   res.status(200).json(dogs)
 })
 
-app.get('/dogs/:id', )
+app.get('/dogs/:id', (req, res) => {
+  // 1- pull out the id from the request
+})
 
 //  [GET] catch all endpoint (404 resource not found)
 app.get('*', (req, res) => {
