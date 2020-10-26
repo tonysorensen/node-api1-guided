@@ -64,7 +64,7 @@ app.put('/dogs/:id', (req, res) => {
   // 2- pull name and breed from body
   const { name, breed } = req.body
   // 3- validate id and validate req body
-  
+  const indexOfDog = dogs.findIndex(dog => dog.id === id)
   // 4- find the dog and swap "breed" and "name"
   // 5- send back the updated dog
 })
