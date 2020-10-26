@@ -84,7 +84,11 @@ app.delete('/dogs/:id', (req, res) => {
   // 3- send back something
   const { id } = req.params
   try {
-    dogs = dogs.filter(dog => dog.id !== id)
+    if (!dogs.find(dog => dog.id === id)) {
+      res.status(404).json({ message : 'Not found'})
+    } else {
+      dogs = dogs.filter(dog => dog.id !== id)
+    }
     // if there is a crash here
     // instead of the app blowing up
     // the block inside the catch will run
