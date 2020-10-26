@@ -19,6 +19,10 @@ let dogs = [
 // 5- ENDPOINT 
 //  [GET] all dogs in the db
 //  catch all endpoint (404 resource not found)
+app.get('/dogs', () => {
+  
+})
+
 app.get('*', (req, res) => {
-  res.status(404).json()
+  res.status(404).json({ message: 'Not found!' })
 })
