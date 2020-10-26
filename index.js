@@ -20,5 +20,5 @@ let dogs = [
 //  [GET] all dogs in the db
 //  catch all endpoint (404 resource not found)
 app.get('*', (req, res) => {
-
+  res.status(404).json()
 })
