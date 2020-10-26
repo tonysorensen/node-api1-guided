@@ -58,7 +58,13 @@ app.post('/dogs', (req, res) => {
 })
 
 // [PUT] replace dog with given id (params) with the { name, breed }
-app.put('/dogs/')
+app.put('/dogs/:id', (req, res) => {
+  // 1- pull id from params
+  // 2- pull name and breed from body
+  // 3- validate id and validate req body
+  // 4- find the dog and swap "breed" and "name"
+  // 5- 
+})
 
 // [GET, POST...] catch all endpoint (404 resource not found)
 app.use('*', (req, res) => {
