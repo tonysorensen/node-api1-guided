@@ -1,10 +1,10 @@
 {
   "name": "gp",
   "version": "1.0.0",
-  "description": "Guided project for **Node API 1** Module.",
+  "description": "Guided project",
   "main": "index.js",
   "scripts": {
-    "server": "node index.js"
+    "server": "nodemon index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
