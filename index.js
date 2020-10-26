@@ -60,9 +60,11 @@ app.post('/dogs', (req, res) => {
 // [PUT] replace dog with given id (params) with the { name, breed }
 app.put('/dogs/:id', (req, res) => {
   // 1- pull id from params
-  const { id } = 
+  const { id } = req.params
   // 2- pull name and breed from body
+  const { name, breed } = req.body
   // 3- validate id and validate req body
+  
   // 4- find the dog and swap "breed" and "name"
   // 5- send back the updated dog
 })
