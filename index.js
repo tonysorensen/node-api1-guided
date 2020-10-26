@@ -82,7 +82,11 @@ app.delete('/dogs/:id', (req, res) => {
   // 1- find dog by the given id
   // 2- remove it from the dogs array
   // 3- send back something
-  
+  try {
+
+  } catch (error) {
+    
+  }
 })
 
 // [GET, POST...] catch all endpoint (404 resource not found)
