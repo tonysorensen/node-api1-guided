@@ -40,6 +40,7 @@ app.get('/dogs/:id', (req, res) => {
 
 // [POST] dog using the request body as raw material
 app.post('/dogs', (req, res) => {
+  // 1- pull out the { name, breed } from the body of req
   
 })
 
