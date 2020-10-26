@@ -41,6 +41,8 @@ app.get('/dogs/:id', (req, res) => {
 // [POST] dog using the request body as raw material
 app.post('/dogs', (req, res) => {
   // 1- pull out the { name, breed } from the body of req
+  const { name, breed } = req.body
+  console.log(name, breed)
   // 2- make sure the body includes name and breed
   // 3- make a new resource, complete with unique id
   // 4- add the new dog to our fake db
