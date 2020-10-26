@@ -51,9 +51,10 @@ app.post('/dogs', (req, res) => {
     // 3- make a new resource, complete with unique id
     const newDog = { id: shortid(), name, breed }
     // 4- add the new dog to our fake db
-    
+    dog.push(newDog)
+    // 5- send back the newly created resource
+    res.status(201).json(newDog)
   }
-  // 5- send back the newly created resource
 })
 
 // [GET] catch all endpoint (404 resource not found)
