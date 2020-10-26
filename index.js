@@ -27,4 +27,7 @@ app.get('*', (req, res) => {
   res.status(404).json({ message: 'Not found!' })
 })
 
-// 
+// 6- LISTEN FOR INCOMING REQUESTS
+app.listen(PORT, () => {
+  console.log(`LISTENING ON PORT `)
+})
