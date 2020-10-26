@@ -12,8 +12,8 @@ app.use(express.json()) // plugging in a piece of middleware
 const PORT = 5000
 
 // 4- FAKE DATA
-const dogs = [
+let dogs = [
   { id: generate(), name: 'Bicho', breed: 'Maltese' },
 ]
 
-console.log(dogs)
+// 
