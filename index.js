@@ -6,4 +6,5 @@ const express = require('express') // commonjs module system that came with Node
 const generate = require('shortid').generate
 
 // 2- INSTANTIATE AND CONFIGURE THE SERVER
-
+const app = express() // here is our app (our server)
+app.use(express.json())
