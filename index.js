@@ -47,8 +47,10 @@ app.post('/dogs', (req, res) => {
     res.status(400).json({
       message: 'Name and breed are required'
     })
+  } else {
+    // 3- make a new resource, complete with unique id
+    const newDog = { id: shortid(),  }
   }
-  // 3- make a new resource, complete with unique id
   // 4- add the new dog to our fake db
   // 5- send back the newly created resource
 })
