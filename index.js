@@ -1,5 +1,5 @@
-console.log('AWESOME Web 35!!!!!!')
 // 1- DEPENDENCIES
+
 // import express from 'express' // package.json needs a "type" key with a value of "module"
 const express = require('express') // commonjs module system that came with Node
 // import { generate } from 'shortid' // ES6 modules
@@ -14,5 +14,5 @@ const PORT = 5000
 
 // 4- FAKE DATA
 const dogs = [
-  { id:  },
+  { id: generate(), name: 'Bicho', breed: 'Maltese' },
 ]
