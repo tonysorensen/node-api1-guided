@@ -17,11 +17,12 @@ let dogs = [
 ]
 
 // 5- ENDPOINTS
-//  [GET] all dogs in the db
+// [GET] all dogs in the db
 app.get('/dogs', (req, res) => {
   res.status(200).json(dogs)
 })
 
+// [GET] dog with the id passed as a parameter in the URL
 app.get('/dogs/:id', (req, res) => {
   // 1- pull out the id from the request (the URL param)
   const { id } = req.params
