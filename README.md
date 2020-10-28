@@ -62,3 +62,8 @@ Here is a table with the `endpoint` descriptions:
 | View Hub details     | /api/hubs/{id}    | GET    | a Hub            |
 | Update Hub           | /api/hubs/{id}    | PATCH  | updated Hub      |
 | Remove a Hub         | /api/hubs/{id}    | DELETE | deleted Hub      |
+
+## Files with notes:
+- ./index.js
+- ./Postman-notes.md
+- ./npm.notes.md
