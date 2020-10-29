@@ -1,3 +1,5 @@
+// NOTES
+
 // bring express into the project
 const express = require('express');
 // a simple module to create id's for our array data objects
